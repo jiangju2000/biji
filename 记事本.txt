@@ -1,0 +1,23 @@
+npm install --registry=https://registry.npm.taobao.org
+
+
+FastStone Capture注册吗:
+name：bluman
+serial/序列号/注册码：VPISCJULXUFGDDXYAUYF
+
+
+---------docker/mysql
+使用的是官方镜像 mysql:5.7
+刚开始在容器内部使用
+mysql -pyourpasswd
+mysql -uroot -pyourpasswd?
+mysql -uroot -pyourpasswd -h127.0.0.1
+登录了N次一直上不去，老是报错 ERROR 1045?
+最后用了一个完整的命令，却登上去了
+mysql -uroot -pyourpasswd -h127.0.0.1 -P 3306 -D mysql
+然后再使
+mysql -pyourpasswd
+mysql -uroot -pyourpasswd?
+都可以登录上去，
+在容器外，宿主机上，也可以登录了
+mysql -uroot -pyourpasswd -h容器IP
